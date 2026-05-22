@@ -362,9 +362,22 @@ function gerarHTMLCliente(visita, aditivos=[]) {
 function abrirPDF(html) {
   const w = window.open("","_blank");
   if(!w){alert("Permita pop-ups para gerar o PDF.");return;}
-  w.document.write(html);
+
+  // Barra de ações no topo do relatório
+  const barra = `
+    <div style="position:fixed;top:0;left:0;right:0;background:#1e6b3a;padding:10px 16px;display:flex;align-items:center;gap:10px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,'Helvetica Neue',sans-serif;">
+      <button onclick="window.close()" style="background:rgba(255,255,255,0.18);border:none;border-radius:8px;padding:7px 14px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">‹ Voltar</button>
+      <span style="flex:1;color:rgba(255,255,255,0.8);font-size:12px;">Bravama Paisagismo</span>
+      <button onclick="window.print()" style="background:#fff;border:none;border-radius:8px;padding:7px 16px;color:#1e6b3a;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;">⬇ Salvar PDF</button>
+    </div>
+    <div style="height:48px"></div>
+  `;
+
+  // Inserir barra no início do body
+  const htmlComBarra = html.replace('<body>', '<body>' + barra);
+
+  w.document.write(htmlComBarra);
   w.document.close();
-  setTimeout(()=>w.print(),700);
 }
 
 // ── STORAGE ───────────────────────────────────────────────────────────────────
