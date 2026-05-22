@@ -17,19 +17,19 @@ const PAGT_BRAVAMA = {tipo:"bravama",pix:"25.211.697/0001-70",banco:"Banco Santa
 const PAGT_ERICH   = {tipo:"erich",pix:"21 97355-3940",nome:"Erich"};
 
 const CLIENTES_INICIAIS = [
-  {id:1, nome:"Joaquim Pedro Bertoletti", bairro:"Lagoa",      endereco:"Av. Borges de Medeiros, 3607, Apto 601",             frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:2, nome:"Ed. Dona Mariana",         bairro:"Botafogo",   endereco:"Rua Dona Mariana, 2",                                frequencia:30, valor:700,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:3, nome:"Nicolas Novak",            bairro:"Barra",      endereco:"Rua Nuta James, 185, Bl.1 Apto 314",                frequencia:30, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH},
-  {id:4, nome:"João Trechau",             bairro:"Flamengo",   endereco:"Av. Oswaldo Cruz, 87, Apto 1803",                   frequencia:45, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH},
-  {id:5, nome:"Luís Flaks",              bairro:"Leblon",     endereco:"Rua Sambaíba, 479, Cobertura",                      frequencia:10, valor:1400, cobranca:"mensal",  visitasMes:3, pagamento:PAGT_BRAVAMA},
-  {id:6, nome:"FCDG",                     bairro:"Centro",     endereco:"Av. Rio Branco, 85, 17º andar",                     frequencia:14, valor:1500, cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:7, nome:"Lucas Arruda",             bairro:"Lagoa",      endereco:"Av. Epitácio Pessoa, 3598, Apto 1202",              frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:8, nome:"Gustavo Aguiar",           bairro:"Lagoa",      endereco:"Av. Borges de Medeiros, 2331",                      frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:9, nome:"André Zaccur",             bairro:"Barra",      endereco:"Av. Raimundo Magalhães Jr., 5777, Bl.3 Apto 802",  frequencia:30, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH},
-  {id:10,nome:"Escritório JFN",           bairro:"Copacabana", endereco:"Rua Figueiredo de Magalhães, 108",                  frequencia:30, valor:700,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:11,nome:"Miguel Alves",             bairro:"Ipanema",    endereco:"Rua Barão da Torre, 188, Apto 801",                 frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
-  {id:12,nome:"Karina Menezes",           bairro:"Ipanema",    endereco:"Rua Prudente de Morais, 710",                       frequencia:52, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH},
-  {id:13,nome:"Loja Zerezes",             bairro:"Ipanema",    endereco:"Rua Garcia Dávila, 115",                            frequencia:15, valor:2800, cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA},
+  {id:1, nome:"Joaquim Pedro Bertoletti", bairro:"Lagoa",      endereco:"Av. Borges de Medeiros, 3607, Apto 601",             frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521997080355"},
+  {id:2, nome:"Ed. Dona Mariana",         bairro:"Botafogo",   endereco:"Rua Dona Mariana, 2",                                frequencia:30, valor:700,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521996477159"},
+  {id:3, nome:"Nicolas Novak",            bairro:"Barra",      endereco:"Rua Nuta James, 185, Bl.1 Apto 314",                frequencia:30, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH,   whatsapp:"5521995400592"},
+  {id:4, nome:"João Trechau",             bairro:"Flamengo",   endereco:"Av. Oswaldo Cruz, 87, Apto 1803",                   frequencia:45, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH,   whatsapp:"5521999228844"},
+  {id:5, nome:"Luís Flaks",              bairro:"Leblon",     endereco:"Rua Sambaíba, 479, Cobertura",                      frequencia:10, valor:1400, cobranca:"mensal",  visitasMes:3, pagamento:PAGT_BRAVAMA, whatsapp:"5521993707142"},
+  {id:6, nome:"FCDG",                     bairro:"Centro",     endereco:"Av. Rio Branco, 85, 17º andar",                     frequencia:14, valor:1500, cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521981600437"},
+  {id:7, nome:"Lucas Arruda",             bairro:"Lagoa",      endereco:"Av. Epitácio Pessoa, 3598, Apto 1202",              frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521986593735"},
+  {id:8, nome:"Gustavo Aguiar",           bairro:"Lagoa",      endereco:"Av. Borges de Medeiros, 2331",                      frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521981517390"},
+  {id:9, nome:"André Zaccur",             bairro:"Barra",      endereco:"Av. Raimundo Magalhães Jr., 5777, Bl.3 Apto 802",  frequencia:30, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH,   whatsapp:"5521987620294"},
+  {id:10,nome:"Escritório JFN",           bairro:"Copacabana", endereco:"Rua Figueiredo de Magalhães, 108",                  frequencia:30, valor:700,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521996522550"},
+  {id:11,nome:"Miguel Alves",             bairro:"Ipanema",    endereco:"Rua Barão da Torre, 188, Apto 801",                 frequencia:30, valor:600,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521976602825"},
+  {id:12,nome:"Karina Menezes",           bairro:"Ipanema",    endereco:"Rua Prudente de Morais, 710",                       frequencia:52, valor:370,  cobranca:"visita",  visitasMes:1, pagamento:PAGT_ERICH,   whatsapp:"5521988966058"},
+  {id:13,nome:"Loja Zerezes",             bairro:"Ipanema",    endereco:"Rua Garcia Dávila, 115",                            frequencia:15, valor:2800, cobranca:"visita",  visitasMes:1, pagamento:PAGT_BRAVAMA, whatsapp:"5521976292985"},
 ];
 
 const SECOES_OPCIONAIS = [
@@ -359,23 +359,34 @@ function gerarHTMLCliente(visita, aditivos=[]) {
   </body></html>`;
 }
 
-function abrirPDF(html) {
+function abrirPDF(html, whatsapp, nomeCliente) {
   const w = window.open("","_blank");
   if(!w){alert("Permita pop-ups para gerar o PDF.");return;}
 
-  // Barra de ações no topo do relatório
-  const barra = `
-    <div style="position:fixed;top:0;left:0;right:0;background:#1e6b3a;padding:10px 16px;display:flex;align-items:center;gap:10px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,'Helvetica Neue',sans-serif;">
-      <button onclick="window.close()" style="background:rgba(255,255,255,0.18);border:none;border-radius:8px;padding:7px 14px;color:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit;">‹ Voltar</button>
-      <span style="flex:1;color:rgba(255,255,255,0.8);font-size:12px;">Bravama Paisagismo</span>
-      <button onclick="window.print()" style="background:#fff;border:none;border-radius:8px;padding:7px 16px;color:#1e6b3a;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;">⬇ Salvar PDF</button>
+  const fmtHoje = new Date().toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric"});
+  const msgWhats = encodeURIComponent(
+    `Olá! Segue o relatório de manutenção paisagística realizada em ${fmtHoje} pela equipe Bravama Paisagismo. Por favor, verifique e qualquer dúvida estamos à disposição.`
+  );
+  const linkWhats = whatsapp ? `https://wa.me/${whatsapp}?text=${msgWhats}` : null;
+
+  const btnWhats = linkWhats
+    ? `<a href="${linkWhats}" target="_blank" style="background:#25d366;border:none;border-radius:8px;padding:7px 14px;color:#fff;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.108.549 4.084 1.508 5.8L0 24l6.335-1.652A11.952 11.952 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.6a9.549 9.549 0 01-4.861-1.328l-.349-.207-3.608.941.965-3.517-.228-.361A9.548 9.548 0 012.4 12c0-5.295 4.305-9.6 9.6-9.6s9.6 4.305 9.6 9.6-4.305 9.6-9.6 9.6z"/></svg>
+        WhatsApp
+      </a>`
+    : `<span style="font-size:11px;color:rgba(255,255,255,0.5);font-style:italic;">Sem nº cadastrado</span>`;
+
+  const barra = \`
+    <div style="position:fixed;top:0;left:0;right:0;background:#1e6b3a;padding:9px 14px;display:flex;align-items:center;gap:8px;z-index:9999;box-shadow:0 2px 8px rgba(0,0,0,0.2);font-family:-apple-system,'Helvetica Neue',sans-serif;flex-wrap:wrap;">
+      <button onclick="window.close()" style="background:rgba(255,255,255,0.18);border:none;border-radius:8px;padding:7px 12px;color:#fff;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;">‹ Voltar</button>
+      <span style="flex:1;color:rgba(255,255,255,0.7);font-size:11px;min-width:80px;">Bravama Paisagismo</span>
+      \${btnWhats}
+      <button onclick="window.print()" style="background:#fff;border:none;border-radius:8px;padding:7px 14px;color:#1e6b3a;font-size:12px;font-weight:700;cursor:pointer;font-family:inherit;">⬇ Salvar PDF</button>
     </div>
-    <div style="height:48px"></div>
-  `;
+    <div style="height:52px"></div>
+  \`;
 
-  // Inserir barra no início do body
   const htmlComBarra = html.replace('<body>', '<body>' + barra);
-
   w.document.write(htmlComBarra);
   w.document.close();
 }
@@ -872,11 +883,11 @@ function TelaRelatorio({visita,todasVisitas,onVoltar,onAtualizar,onDeletar}) {
 
         {/* Botões PDF */}
         <div style={{display:"flex",gap:7,marginBottom:12}}>
-          <button onClick={()=>abrirPDF(gerarHTMLTecnico(visitaParaPDF,aditivos))}
+          <button onClick={()=>abrirPDF(gerarHTMLTecnico(visitaParaPDF,aditivos), visita.cliente.whatsapp, visita.cliente.nome)}
             style={{flex:1,padding:"11px 6px",background:C.green,border:"none",borderRadius:10,fontSize:11,fontWeight:600,color:"#fff",display:"flex",flexDirection:"column",alignItems:"center",gap:2}}>
             <span style={{fontSize:16}}>📄</span><span>Relatório Técnico</span><span style={{fontSize:8,opacity:0.8}}>Para o David</span>
           </button>
-          <button onClick={()=>abrirPDF(gerarHTMLCliente(visitaParaPDF,aditivos))}
+          <button onClick={()=>abrirPDF(gerarHTMLCliente(visitaParaPDF,aditivos), visita.cliente.whatsapp, visita.cliente.nome)}
             style={{flex:1,padding:"11px 6px",background:C.bgSecondary,border:`1px solid ${C.border}`,borderRadius:10,fontSize:11,fontWeight:600,color:C.text,display:"flex",flexDirection:"column",alignItems:"center",gap:2}}>
             <span style={{fontSize:16}}>📋</span><span>Relatório Cliente</span><span style={{fontSize:8,color:C.textMuted}}>Para enviar</span>
           </button>
@@ -1167,6 +1178,11 @@ function TelaPainel({visitas,alertas,setAlertas,clientes,onVoltar,onVerRelatorio
                   style={{width:"100%",border:`1px solid ${C.border}`,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,background:C.bgSecondary,outline:"none"}}/>
               </div>
             )}
+            <div style={{marginBottom:9}}>
+              <div style={{fontSize:9,color:C.textMuted,fontWeight:600,textTransform:"uppercase",letterSpacing:1,marginBottom:3}}>WhatsApp (somente números, sem +55)</div>
+              <input value={novoCliente.whatsapp||""} onChange={e=>setNovoCliente(p=>({...p,whatsapp:"55"+e.target.value.replace(/\D/g,"")}))} placeholder="21 99999-9999"
+                style={{width:"100%",border:`1px solid ${C.border}`,borderRadius:8,padding:"8px 10px",fontSize:13,color:C.text,background:C.bgSecondary,outline:"none"}}/>
+            </div>
             <div style={{marginBottom:14}}>
               <div style={{fontSize:9,color:C.textMuted,fontWeight:600,textTransform:"uppercase",letterSpacing:1,marginBottom:5}}>Recebimento</div>
               <div style={{display:"flex",gap:6}}>
